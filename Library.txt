@@ -1,2 +1,1 @@
-shelf_1 : {'name': 'rtgryr', 'authors': 'egggr'}
-shelf_3 : {'name': 'fweefef', 'authors': '.k;lk'}
+
