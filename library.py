@@ -11,6 +11,10 @@ def get_shelfs_book():
         shelf_format = shelf_format.format(number, book_format)
         with open("Library.txt", "a") as f:
             f.write(f"{shelf_format}\n")
+        if quantity == 1:
+            return print("Книга добавлена")
+        else:
+            return print("Книги добавлены")
 
     
 def read_file_library():
