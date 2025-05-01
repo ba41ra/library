@@ -4,17 +4,12 @@ def get_shelfs_book():
         number = int(input("На какую полку добавить книгу:"))
         book_name = input("Название книги:")
         author = input("Автор книги:")
-        book_format = {'name' : None, 'authors' : None}
-        book_format["name"] = book_name
-        book_format["authors"] = author
+        book_format = {'name' : book_name, 'authors' : author}
         shelf_format = "shelf_{} : {}"
         shelf_format = shelf_format.format(number, book_format)
         with open("Library.txt", "a") as f:
             f.write(f"{shelf_format}\n")
-        if quantity == 1:
-            return print("Книга добавлена")
-        else:
-            return print("Книги добавлены")
+        return print("Книги добавлены")
 
     
 def read_file_library():
